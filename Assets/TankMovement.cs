@@ -29,7 +29,7 @@ public class TankMovement : MonoBehaviour {
 			transform.Rotate(0,0,-rotSpeed);
 		}
 		if(Input.GetKey(KeyCode.W)&&!momentum){
-		transform.Translate(Vector2.up * Time.deltaTime * speed);
+			transform.Translate(Vector2.up * Time.deltaTime * speed);
 		}
 		if(Input.GetKey(KeyCode.S)&&!momentum){
 			transform.Translate(Vector2.up * Time.deltaTime * -speed);
@@ -42,7 +42,7 @@ public class TankMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		//GetComponent<Rigidbody2D>().velocity = new Vector2 (transform.forward,0);
+	//	GetComponent<Rigidbody2D>().velocity = new Vector2 (0,0);
 	}
 
 	void shoot()
